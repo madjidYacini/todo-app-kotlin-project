@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="8dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#CFEEEB">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp" android:background="#CFEEEB">
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/close" style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:checked="false" android:focusable="auto" android:textColor="#2196F3"/>
+
+        <TextView android:id="@+id/task"
+                  android:layout_height="wrap_content"
+                  android:layout_width="103dp"
+                  style="@style/task_title"
+                  android:layout_weight="8"/>
+        <ImageButton
+                android:layout_width="15dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                android:id="@+id/delete" android:background="@android:color/transparent" android:tint="#00FF0A0A"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
